@@ -11,4 +11,32 @@ prebuilds
 builds
 *.DS_Store
 electron-example/.DS_Store
+package-lock.json
 
+# Added after build in MacOS
+libuiohook/Makefile
+libuiohook/config.status
+libuiohook/include/config.h
+libuiohook/include/stamp-h1
+libuiohook/libtool
+libuiohook/pc/uiohook.pc
+libuiohook/src/.deps/demohook-demo_hook.Po
+libuiohook/src/.deps/demohookasync-demo_hook_async.Po
+libuiohook/src/.deps/demopost-demo_post.Po
+libuiohook/src/.deps/demoprops-demo_properties.Po
+libuiohook/src/.deps/libuiohook_la-logger.Plo
+libuiohook/src/darwin/.deps/libuiohook_la-input_helper.Plo
+libuiohook/src/darwin/.deps/libuiohook_la-input_hook.Plo
+libuiohook/src/darwin/.deps/libuiohook_la-post_event.Plo
+libuiohook/src/darwin/.deps/libuiohook_la-system_properties.Plo
+libuiohook/src/windows/.deps/libuiohook_la-input_helper.Plo
+libuiohook/src/windows/.deps/libuiohook_la-input_hook.Plo
+libuiohook/src/windows/.deps/libuiohook_la-post_event.Plo
+libuiohook/src/windows/.deps/libuiohook_la-system_properties.Plo
+libuiohook/src/x11/.deps/libuiohook_la-input_helper.Plo
+libuiohook/src/x11/.deps/libuiohook_la-input_hook.Plo
+libuiohook/src/x11/.deps/libuiohook_la-post_event.Plo
+libuiohook/src/x11/.deps/libuiohook_la-system_properties.Plo
+libuiohook/test/.deps/testhook-input_helper_test.Po
+libuiohook/test/.deps/testhook-system_properties_test.Po
+libuiohook/test/.deps/testhook-uiohook_test.Po

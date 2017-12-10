@@ -2,6 +2,7 @@
 const os = require('os');
 const EventEmitter = require('events');
 const path = require('path');
+const fs = require('fs');
 
 // Try use handler if runtime and ABI is compatible  
 try {
@@ -11,7 +12,11 @@ try {
 
 const runtime = process.versions['electron'] ? 'electron' : 'node';
 const essential = runtime + '-v' + process.versions.modules + '-' + process.platform + '-' + process.arch;
-const modulePath = path.join(__dirname, 'builds', essential, 'build', 'Release', 'iohook.node');
+var modulePath = path.join(__dirname, 'builds', essential, 'build', 'Release', 'iohook.node');
+if (!fs.existsSync(modulePath)) {
+  modulePath = path.join(__dirname, 'build', 'Release', 'iohook.node');
+}
+
 console.log('Loading native binary:', modulePath);
 let NodeHookAddon = require(modulePath);
 
