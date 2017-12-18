@@ -13,9 +13,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com:gravit-horst/iohook.git"
+    "url": "git+https://github.com:renjfk/iohook.git"
   },
-  "private": true,
   "keywords": [
     "hook",
     "electron",
