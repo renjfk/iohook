@@ -83,7 +83,7 @@ All what you need install os dependencies and start compilation:
   - [![](http://landinghub.visualstudio.com/favicon.ico) Visual C++ Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools)
   - [CMake.js](https://www.npmjs.com/package/cmake-js)
   and it will be built by install script
-- for Electron go to installation dir (node_modules/iohook) and recompile it according to your Electron version. e.g. `cmake-js compile -r electron -v 1.7.1`
+- for Electron go to installation dir (node_modules/iohook) and recompile it according to your Electron version. e.g. `cmake-js rebuild -r electron -v 1.7.1`
 
 ## Usage
 Module is pretty simple for use. There is example:  
