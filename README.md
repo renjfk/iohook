@@ -10,14 +10,14 @@ If you like this module or are interested in updates, follow me on Twitter [http
 ## OS Support
 Already tested in:
 - Ubuntu 16.04
-- macOS Sierra 10.12
-- Windows (NOT TESTED YET)
+- macOS High Sierra 10.13.1
+- Windows 7 SP1
 
 ## Installation
 This module use native library libuiohook and require some installed packages.  
 I really hope find way for use build systems for online build or download prebuild packages.
 
-`npm install iohook --save`
+`npm i git+https://github.com:renjfk/iohook.git`
 
 ### Electron users [optional]
 Before install this module, you need specify build runtime.
@@ -76,6 +76,14 @@ All what you need install os dependencies and start compilation:
 - `brew install cmake automake libtool pkg-config`
 - `cd node_modules/iohook`
 - `npm run build`
+
+### Windows
+- for Node.js usage just make sure that you have installed following components
+  - [![](https://cmake.org/wp-content/uploads/2014/06/favicon.png) CMake](https://cmake.org)
+  - [![](http://landinghub.visualstudio.com/favicon.ico) Visual C++ Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools)
+  - [CMake.js](https://www.npmjs.com/package/cmake-js)
+  and it will be built by install script
+- for Electron go to installation dir (node_modules/iohook) and recompile it according to your Electron version. e.g. `cmake-js compile -r electron -v 1.7.1`
 
 ## Usage
 Module is pretty simple for use. There is example:  
