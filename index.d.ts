@@ -1,13 +1,23 @@
-import { EventEmitter } from 'events'
+declare module "iohook" {
+    type EventType = "mousemove" | "keydown" | "keyup" | "mouseclick" | "mousedown" | "mouseup" | "mousemove" | "mousedrag" | "mousewheel";
 
-declare class IOHook extends EventEmitter {
-  start(enableLogger: boolean): void
-  stop(): void
-  load(): void
-  unload(): void
-  setDebug(mode: boolean): void
+    interface Event {
+        type: EventType,
+        x: number,
+        y: number,
+        keychar: string,
+        keycode: number,
+        rawcode: number,
+        clicks: number,
+        button: number,
+        amount: number,
+        direction: number,
+        rotation: number
+    }
+
+    function on(type: EventType, callback: (event: Event) => void): void;
+
+    function start(debug?: boolean): void;
+
+    function stop(): void;
 }
-
-declare const iohook: IOHook
-
-export = iohook
