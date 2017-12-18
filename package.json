@@ -5,9 +5,9 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "install": "node install.js || cmake-js compile",
+    "install": "node install.js || cmake-js build",
     "install-all": "node install.js --all",
-    "build": "cmake-js compile",
+    "build": "cmake-js build",
     "deploy": "node build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
