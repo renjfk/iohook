@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/WilixLead/iohook#readme",
   "dependencies": {
+    "nan": "^2.6.2",
     "@types/node": "^7.0.39",
     "bindings": "^1.2.1",
     "node-abi": "^2.0.0",
@@ -41,7 +42,6 @@
     "tar-fs": "^1.15.2"
   },
   "devDependencies": {
-    "nan": "^2.6.2",
     "cmake-js": "^3.4.1",
     "mkdirp": "^0.5.1",
     "prebuild": "^6.1.0",
